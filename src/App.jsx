@@ -16,13 +16,13 @@ function App() {
 
   const calculateInputs = (firstInput, operator, secondInput) => {
     if (operator === "add") {
-      setResult(parseFloat(firstInput) + parseFloat(secondInput));
+      setResult(Math.round((parseFloat(firstInput) + parseFloat(secondInput)) * 100) / 100);
     } else if (operator === "subtract") {
-      setResult(parseFloat(firstInput) - parseFloat(secondInput));
+      setResult(Math.round((parseFloat(firstInput) - parseFloat(secondInput)) * 100) / 100);
     } else if (operator === "multiply") {
-      setResult(parseFloat(firstInput) * parseFloat(secondInput));
+      setResult(Math.round((parseFloat(firstInput) * parseFloat(secondInput)) * 100) / 100);
     } else if (operator === "divide") {
-      setResult(parseFloat(firstInput) / parseFloat(secondInput));
+      setResult(Math.round((parseFloat(firstInput) / parseFloat(secondInput)) * 100) / 100);
     }
   };
 
