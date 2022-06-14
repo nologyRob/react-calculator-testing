@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
-import Calculator from "./components/Calculator/Calculator";
-import ResultBox from "./components/ResultBox/ResultBox";
+import Calculator from "./containers/Calculator/Calculator";
+
 
 function App() {
   const [result, setResult] = useState();
@@ -34,8 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <Calculator handleSubmit={handleSubmit} />
-      <ResultBox result={result} />
+      <Calculator handleSubmit={handleSubmit} result={result}/>
     </div>
   );
 }

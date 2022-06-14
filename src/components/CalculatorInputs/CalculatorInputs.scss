@@ -1,11 +1,10 @@
-.calculator {
-  height: 60vh;
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid grey;
+.calculator-inputs {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 50%;
+height: 100%;
 
   &__int-input{
     padding: 20px;

@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Calculator.scss"
+import "./CalculatorInputs.scss"
 
-const Calculator = ({handleSubmit} ) => {
+const CalculatorInputs = ({handleSubmit} ) => {
 
   return (
-    <form onSubmit={handleSubmit} className="calculator">
-        <div className="calculator__int-input">
+    <form onSubmit={handleSubmit} className="calculator-inputs">
+        <div className="calculator-inputs__int-input">
           <label htmlFor="first-int">Enter first number here</label>
           <input id="first-int" type="number" min="0"  step="any"/>
         </div>
@@ -16,7 +16,7 @@ const Calculator = ({handleSubmit} ) => {
           <option value="divide">Divide</option>
           <option value="multiply">Multiply</option>
         </select>
-        <div className="calculator__int-input">
+        <div className="calculator-inputs__int-input">
           <label htmlFor="second-int">Enter second number here</label>
           <input id="second-int" type="number" min="0" step="any"/>
         </div>
@@ -25,4 +25,4 @@ const Calculator = ({handleSubmit} ) => {
   )
 }
 
-export default Calculator
+export default CalculatorInputs
