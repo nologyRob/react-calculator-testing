@@ -7,3 +7,13 @@
   align-items: center;
   border: 1px solid grey;
 }
+
+button {
+  background-color: lightblue;
+  border: 1px solid grey;
+}
+
+button:focus {
+  background-color: green;
+  border: 1px solid grey;
+}

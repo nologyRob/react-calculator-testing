@@ -43,6 +43,7 @@ const Calculator = () => {
     event.preventDefault();
     const inputs = getTargetValues(event, 3);
     calculateInputs(inputs[0], operator, inputs[1]);
+    console.log(inputs[0], operator, inputs[1]);
     
   };
 

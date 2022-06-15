@@ -12,9 +12,9 @@ const CalculatorInputs = ({handleSubmit,getOperator} ) => {
         <p htmlFor="operations">Choose an operation:</p>
 
         <button onClick={getOperator} type="button" value="add">Add</button>
-        <button onClick={getOperator}  type="button" value="add">Subtract</button>
-        <button onClick={getOperator}  type="button" value="add">Divide</button>
-        <button onClick={getOperator}  type="button" value="add">Multiply</button>
+        <button onClick={getOperator}  type="button" value="subtract">Subtract</button>
+        <button onClick={getOperator}  type="button" value="divide">Divide</button>
+        <button onClick={getOperator}  type="button" value="multiply">Multiply</button>
       
         <div className="calculator-inputs__int-input">
           <label htmlFor="second-int">Enter second number here</label>
